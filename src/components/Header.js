@@ -1,3 +1,5 @@
+// 56:37
+
 import React from "react";
 import Image from "next/image";
 import {
@@ -24,9 +26,29 @@ function Header() {
           />
         </div>
         {/* search bar input*/}
-        <div>
-          <input type="text" />
-          <SearchIcon />
+        <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor bg-yellow-400  hover:bg-yellow-500">
+          <input
+            className="p-2 h-fulll w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
+            type="text"
+          />
+          <SearchIcon className="h-12 p-4" />
+        </div>
+
+        {/* Right */}
+        <div className="text-white flex items-center text-xs space-x-6 mx-6 white-space-nowrap">
+          <div>
+              <p>Hellow Bede</p>
+              <p>Account & Lists</p>
+          </div>
+          <div>
+              <p>Returns</p>
+              <p>& Orders</p>
+          </div>
+          <div>
+              <ShoppingCartIcon className="h-10"/>
+              <p>Basket</p>
+
+          </div>
         </div>
       </div>
       {/* Bottom Half */}
