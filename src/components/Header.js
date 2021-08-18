@@ -36,23 +36,41 @@ function Header() {
 
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 white-space-nowrap">
-          <div>
-              <p>Hellow Bede</p>
-              <p>Account & Lists</p>
+          <div className="link">
+            <p>Hellow Bede</p>
+            <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
-          <div>
-              <p>Returns</p>
-              <p>& Orders</p>
+          <div className="link">
+            <p>Returns</p>
+            <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
-          <div>
-              <ShoppingCartIcon className="h-10"/>
-              <p>Basket</p>
-
+          <div className="relative link flex items-center">
+            <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
+              4
+            </span>
+            <ShoppingCartIcon className="h-10" />
+            <p className="hidden md:inline font-extrabold md:text-sm mt-2">
+              Basket
+            </p>
           </div>
         </div>
       </div>
       {/* Bottom Half */}
-      <div></div>
+      <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
+        <p className="link flex items-center">
+          <MenuIcon className="h-6 mr-1" />
+          All
+        </p>
+        <p className="link">Prime Video</p>
+        <p className="link">Prime Video</p>
+        <p className="link">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+        <p className="link hidden lg:inline-flex">Prime Video</p>
+      </div>
     </header>
   );
 }
